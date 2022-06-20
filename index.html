@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tebak Angka</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&family=Oswald:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif&family=Playfair+Display&family=Poppins:wght@300;700&family=Roboto+Mono&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="start">
+        <div class="title">
+          <h2>Saya memikirkan angka 1-100</h2>
+          <h2 class="h2">bisakah kamu menebaknya?</h2>
+          <h2 class="dua">kamu hanya punya 10 kali kesempatan</h2>
+          <button class="mulai btn">Mulai!</button>
+        </div>
+      </div>
+      <div class="box hilang">
+        <div class="content">
+          <h2 class="hitungTebakan">Kamu masih punya 10 kesempatan</h2>
+          <p>Angka tebakan kamu</p>
+          <input type="text" />
+          <div id="tombolTebak">
+            <button class="tebak btn">Tebak</button>
+          </div>
+          <div id="ulang">
+            <button class="btn">Ulang</button>
+          </div>
+          <p class="indikator"></p>
+        </div>
+        <div class="info hilang">
+          <!-- <p class="winLose">kamu menang</p> -->
+          <p class="tebakan"></p>
+          <!-- <button class="tryAgain btn">Ulang</button> -->
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
