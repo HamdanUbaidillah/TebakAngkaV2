@@ -18,17 +18,12 @@ start.addEventListener("click", function () {
 });
 
 // mencari angka random
-function randomNumber() {
-  return Math.floor(Math.random() * 100) + 1;
-}
-
-let random = randomNumber();
+let random = Math.floor(Math.random() * 100) + 1;
 let hasil = "";
 let count = "";
 let chance = 10;
 // menebak angka random
 btnGuess.addEventListener("click", function () {
-  btnGuess.disabled = false;
   // mengecek jika yg di inputkan bukan angka
   if (input.value == "" || isNaN(input.value)) {
     input.value = "";
@@ -39,11 +34,10 @@ btnGuess.addEventListener("click", function () {
     count = count + 1 - 1;
     alert("Harap Masukan Angka 1-100");
   } else {
-    count++;
     // alur game
     // jika tebakan benar
+    count++;
     if (input.value == random) {
-      btnGuess.disabled = true;
       btnUlang.classList.remove("hilang");
       btnTebak.classList.add("hilang");
       info.classList.remove("hilang");
