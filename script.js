@@ -23,7 +23,6 @@ function randomNumber() {
 }
 
 let random = randomNumber();
-console.log(random);
 let hasil = "";
 let count = "";
 let chance = 10;
