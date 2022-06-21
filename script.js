@@ -31,6 +31,7 @@ btnGuess.addEventListener("click", function () {
     alert("Harap Masukan Angka");
   } //jika yang di inputkan tidak angka 1-100
   else if (input.value < 0 || input.value > 100) {
+    input.value = "";
     count = count + 1 - 1;
     alert("Harap Masukan Angka 1-100");
   } else {
