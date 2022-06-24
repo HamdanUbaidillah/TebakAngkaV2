@@ -21,7 +21,7 @@ start.addEventListener("click", function () {
 let random = Math.floor(Math.random() * 100) + 1;
 let hasil = "";
 let count = "";
-let chance = 10;
+let chance = 5;
 // menebak angka random
 btnGuess.addEventListener("click", function () {
   // mengecek jika yg di inputkan bukan angka
